@@ -1,0 +1,152 @@
+:root{
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --dark-gray: #222222;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.main-header{
+    background-color: var(--yellow);
+    padding: 20px;
+}
+.img-logo{
+    display: flex;
+    margin: auto;
+}
+.logo{
+    width: 200px;
+    margin: auto;
+}
+
+.search-bar{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.search-bar input{
+    width: 100%;
+}
+
+.hamburguer-button{
+    background-color: var(--dark-blue);
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: var(--dark-gray);
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
+}
+main{
+    background-color: var(--light-gray);
+    padding: 5px;
+}
+.product-card{
+    margin-bottom: 10px;
+}
+.product-info{
+    border-top: solid 2px black;
+    background-color: white;
+}
+main img{
+    max-width: 100%;
+    margin: auto;
+}
+
+@media( min-width:768px ){
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img-logo{
+        flex-grow: 1;
+        max-width: 160px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .search-bar{
+        max-height: 30px;
+        max-width: 250px;
+        margin: auto;
+        flex-grow: 1;
+    }
+    .copy-header{
+        max-width: 300px;
+        text-align: right;
+        font-weight: 200;
+        font-size: 20px;
+        flex-grow: 1;
+    }
+    .hamburguer-button{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+}
+
+@media( min-width: 1200px ){
+    .img-logo{
+        margin-right: 50px;
+    }
+    .logo{
+        width: 250px;
+    }
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .copy-header{
+        margin: 0;
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .main-navbar{
+        margin-top: 20px;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+}
