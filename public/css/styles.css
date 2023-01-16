@@ -72,18 +72,24 @@
 main{
     background-color: var(--light-gray);
     padding: 5px;
+    width: 90%;
+    margin: auto;
 }
 .product-card{
     margin-bottom: 10px;
+    min-width: 200px;
+    max-width: 350px;
 }
 .product-info{
-    border-top: solid 2px black;
+    border-top: solid 1px #ebebeb;
     background-color: white;
+    padding: 15px;
 }
 main img{
     max-width: 100%;
     margin: auto;
 }
+
 
 @media( min-width:768px ){
     .main-header-top-bar{
@@ -121,7 +127,17 @@ main img{
     .main-navbar ul{
         display: flex;
     }
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .product-card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: 15px;
+    }
 }
+
 
 @media( min-width: 1200px ){
     .img-logo{
