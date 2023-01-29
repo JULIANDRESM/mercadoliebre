@@ -1,21 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
+const controlador = require('../controllers/mainController');
 
-router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/home.html'));
-});
+router.get('/', controlador.index);
 
-router.get('/productDetail', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/productDetail.html'));
-});
+router.get('/productDetail', controlador.productDetail);
 
-router.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/login.html'));
-});
+router.get('/login', controlador.login);
 
-router.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/register.html'));
-});
+router.get('/register', controlador.register);
 
 module.exports = router;
