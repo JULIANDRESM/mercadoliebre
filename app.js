@@ -4,7 +4,7 @@ const app = express();
 const rutas = require('./routes/mainRouter.js');
 
 app.use(express.static('public'));
-
+app.set('view engine','ejs');
 // const port = 3000;
 const port = process.env.PORT || 3000;
 

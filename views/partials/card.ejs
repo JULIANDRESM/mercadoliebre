@@ -1,0 +1,19 @@
+<% articulos.forEach(art => { %>
+    <section class="product-card">
+        <a href="/productDetail/<%= art.id %>">
+            <div class="image">
+                <img src="<%= art.imagen %>" alt="">
+            </div>
+            <div class="camion">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="product-info">
+                <div class="product-detail">
+                    <p><%= art.precio%></p>
+                    <p class="off"><%= art.descuento %></p>
+                </div>
+                <p class="description"><%= art.descripcion %></p>
+            </div>
+        </a>
+    </section>
+<% }) %>

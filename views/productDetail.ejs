@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %> 
+<body>
+    <%- include('./partials/header') %> 
+
+        <main>
+            <div class="content">
+            <section class="articles">
+                <section class="product-card">
+                    <a href="/productDetail">
+                        <div class="image">
+                            <img src="<%= articulo.imagen %> " alt="">
+                        </div>
+                        <div class="camion">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-detail">
+                                <p><%= articulo.precio %> </p>
+                                <p class="off"><%= articulo.descuento %> </p>
+                            </div>
+                            <p class="description"><%= articulo.descripcion %> </p>
+                        </div>
+                    </a>
+                </section>
+            </section>
+        </div>
+
+    </main>
+    <%- include('./partials/footer') %> 
+</body>
+</html>
